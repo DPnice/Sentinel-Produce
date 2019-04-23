@@ -1,0 +1,7 @@
+com\alibaba\csp\sentinel\demo\apache\dubbo\provider\ProviderConfiguration.class
+com\alibaba\csp\sentinel\demo\apache\dubbo\FooService.class
+com\alibaba\csp\sentinel\demo\apache\dubbo\FooConsumerBootstrap.class
+com\alibaba\csp\sentinel\demo\apache\dubbo\consumer\ConsumerConfiguration.class
+com\alibaba\csp\sentinel\demo\apache\dubbo\consumer\FooServiceConsumer.class
+com\alibaba\csp\sentinel\demo\apache\dubbo\provider\FooServiceImpl.class
+com\alibaba\csp\sentinel\demo\apache\dubbo\FooProviderBootstrap.class

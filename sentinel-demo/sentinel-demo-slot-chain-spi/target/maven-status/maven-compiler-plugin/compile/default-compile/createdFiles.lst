@@ -1,0 +1,3 @@
+com\alibaba\csp\sentinel\demo\slot\DemoSlot.class
+com\alibaba\csp\sentinel\demo\slot\SlotChainBuilderSpiDemo.class
+com\alibaba\csp\sentinel\demo\slot\DemoSlotChainBuilder.class

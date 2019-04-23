@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter/sentinel-apache-dubbo-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter/sentinel-dubbo-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter/sentinel-grpc-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter/sentinel-reactor-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter/sentinel-spring-webflux-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter/sentinel-web-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-adapter/sentinel-zuul-adapter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-benchmark" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-cluster" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-cluster/sentinel-cluster-client-default" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-cluster/sentinel-cluster-common-default" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-cluster/sentinel-cluster-server-default" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-annotation-spring-aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-apache-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-apollo-datasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-basic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-cluster" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-cluster/sentinel-demo-cluster-embedded" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-cluster/sentinel-demo-cluster-server-alone" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-command-handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-dynamic-file-rule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-nacos-datasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-parameter-flow-control" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-slot-chain-spi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-spring-webflux" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo-zookeeper-datasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension/sentinel-annotation-aspectj" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension/sentinel-datasource-apollo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension/sentinel-datasource-extension" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension/sentinel-datasource-nacos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension/sentinel-datasource-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension/sentinel-datasource-zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-extension/sentinel-parameter-flow-control" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-transport" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-transport/sentinel-transport-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-transport/sentinel-transport-netty-http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-transport/sentinel-transport-simple-http" charset="UTF-8" />
+  </component>
+</project>
