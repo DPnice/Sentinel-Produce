@@ -75,6 +75,7 @@
         <!--<module>sentinel-demo</module>-->
         <module>sentinel-benchmark</module>
         <module>sentinel-cluster</module>
+        <module>automatic-registration-data-source</module>
     </modules>
 
     <dependencyManagement>
