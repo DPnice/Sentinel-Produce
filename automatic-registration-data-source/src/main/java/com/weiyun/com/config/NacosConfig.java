@@ -33,11 +33,14 @@ public class NacosConfig {
     @Value("${nacos.config.sentinel.namespace:ec3e95f8-2e6b-4857-95a4-7e68083289b4}")
     private String namespace;
 
+    public static Properties propertiesBean;
+
     @Bean("nacosProperties")
     public Properties nacosProperties() {
         Properties properties = new Properties();
         properties.put(PropertyKeyConst.NAMESPACE, namespace);
         properties.put(PropertyKeyConst.SERVER_ADDR, serverAddr);
+        propertiesBean = properties;
         return properties;
     }
 }

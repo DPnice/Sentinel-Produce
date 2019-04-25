@@ -17,6 +17,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.alibaba.nacos.api.PropertyKeyConst;
 
+import com.weiyun.com.config.NacosConfig;
 import com.weiyun.com.config.NacosConfigUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -39,22 +40,9 @@ public class DynamicRuleInitFunc implements InitFunc {
     private final String sysDataId = APP_NAME + NacosConfigUtil.SYSTEM_DATA_ID_POSTFIX;
     private final String authorityDataId = APP_NAME + NacosConfigUtil.AUTH_DATA_ID_POSTFIX;
 
-    private final Properties properties;
-
-    private String serverAddr = "192.168.196.1:8848";
-    private String namespace = "ec3e95f8-2e6b-4857-95a4-7e68083289b4";
-
-    @Autowired
-    public DynamicRuleInitFunc(@Qualifier("nacosProperties") Properties properties) {
-        this.properties = properties;
-    }
-
     @Override
     public void init() {
-        System.out.println("自动注册数据源");
-//        Properties properties = new Properties();
-//        properties.put(PropertyKeyConst.NAMESPACE, namespace);
-//        properties.put(PropertyKeyConst.SERVER_ADDR, serverAddr);
+        Properties properties = NacosConfig.propertiesBean;
         //从 nacos 监听配置 限流
         NacosDataSource<List<FlowRule>> flowRuleSource = new NacosDataSource<>(properties,
                 NacosConfigUtil.GROUP_ID, flowDataId,
