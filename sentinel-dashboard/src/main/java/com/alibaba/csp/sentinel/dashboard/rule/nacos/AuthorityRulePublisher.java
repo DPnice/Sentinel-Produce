@@ -32,8 +32,7 @@ public class AuthorityRulePublisher implements DynamicRulePublisher<List<Authori
         if (rules == null) {
             return;
         }
-        boolean b = this.configService.publishConfig(app + NacosConfigUtil.AUTH_DATA_ID_POSTFIX,
+        this.configService.publishConfig(app + NacosConfigUtil.AUTH_DATA_ID_POSTFIX,
                 NacosConfigUtil.GROUP_ID, this.converter.convert(rules));
-        System.out.println(b);
     }
 }

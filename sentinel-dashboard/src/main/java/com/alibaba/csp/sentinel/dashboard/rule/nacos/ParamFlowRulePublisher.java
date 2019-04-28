@@ -33,6 +33,5 @@ public class ParamFlowRulePublisher implements DynamicRulePublisher<List<ParamFl
         }
         boolean b = this.configService.publishConfig(app + NacosConfigUtil.PARAM_FLOW_DATA_ID_POSTFIX,
                 NacosConfigUtil.GROUP_ID, this.converter.convert(rules));
-        System.out.println(b);
     }
 }

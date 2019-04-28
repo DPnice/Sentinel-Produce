@@ -32,6 +32,5 @@ public class SystemRuleNacosPublisher implements DynamicRulePublisher<List<Syste
         System.out.println(converter.convert(rules));
         boolean b = configService.publishConfig(app + NacosConfigUtil.SYSTEM_DATA_ID_POSTFIX,
                 NacosConfigUtil.GROUP_ID, converter.convert(rules));
-        System.out.println(b);
     }
 }

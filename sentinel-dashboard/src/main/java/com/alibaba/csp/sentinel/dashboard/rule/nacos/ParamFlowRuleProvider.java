@@ -35,7 +35,6 @@ public class ParamFlowRuleProvider {
     public List<ParamFlowRuleEntity> getRules(String appName, String ip, String port) throws Exception {
         AssertUtil.notEmpty(appName, "app name cannot be empty");
         String config = this.configService.getConfig(appName + NacosConfigUtil.PARAM_FLOW_DATA_ID_POSTFIX, NacosConfigUtil.GROUP_ID, 3000);
-        System.out.println(config);
         if (StringUtil.isBlank(config)){
             return Collections.emptyList();
         }

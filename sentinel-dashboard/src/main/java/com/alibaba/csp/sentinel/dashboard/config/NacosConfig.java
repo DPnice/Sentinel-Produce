@@ -86,7 +86,6 @@ public class NacosConfig {
     @Bean
     public Converter2<List<SystemRuleEntity>, String> systemRuleEntityEncoder() {
         return (s, p) -> JSON.toJSONString(s);
-//        return JSON::toJSONString;
     }
 
     /**
@@ -116,7 +115,6 @@ public class NacosConfig {
                 .map(rule -> ParamFlowRuleEntity
                         .fromAuthorityRule(p[0], p[1], Integer.valueOf(p[2]), rule))
                 .collect(Collectors.toList());
-//        return s -> JSON.parseArray(s, ParamFlowRuleEntity.class);
     }
 
     @Bean

@@ -30,8 +30,7 @@ public class DegradeRuleNacosPublisher implements DynamicRulePublisher<List<Degr
         if (rules == null) {
             return;
         }
-        boolean b = configService.publishConfig(app + NacosConfigUtil.DEGRADE_DATA_ID_POSTFIX,
+        configService.publishConfig(app + NacosConfigUtil.DEGRADE_DATA_ID_POSTFIX,
                 NacosConfigUtil.GROUP_ID, converter.convert(rules));
-        System.out.println("推送：" + b);
     }
 }
