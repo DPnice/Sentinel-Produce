@@ -8,7 +8,7 @@ app.service('SystemService', ['$http', function ($http) {
       port: port
     };
     return $http({
-      url: 'system/rules.json',
+      url: '/sentinel/system/rules.json',
       params: param,
       method: 'GET'
     });
@@ -31,7 +31,7 @@ app.service('SystemService', ['$http', function ($http) {
     }
 
     return $http({
-      url: '/system/new.json',
+      url: '/sentinel/system/new.json',
       params: param,
       method: 'GET'
     });
@@ -51,7 +51,7 @@ app.service('SystemService', ['$http', function ($http) {
       param.qps = rule.qps;
     }
     return $http({
-      url: '/system/save.json',
+      url: '/sentinel/system/save.json',
       params: param,
       method: 'GET'
     });
@@ -64,7 +64,7 @@ app.service('SystemService', ['$http', function ($http) {
     };
 
     return $http({
-      url: '/system/delete.json',
+      url: '/sentinel/system/delete.json',
       params: param,
       method: 'GET'
     });

@@ -36,6 +36,9 @@ import com.alibaba.csp.sentinel.util.StringUtil;
  */
 public class SimpleHttpHeartbeatSender implements HeartbeatSender {
 
+    /**
+     * 修改HEARTBEAT_PATH 添加/sentinel
+     */
     private static final String HEARTBEAT_PATH = "/sentinel/registry/machine";
     private static final int OK_STATUS = 200;
 

@@ -52,7 +52,7 @@ app.controller('DegradeCtl', ['$scope', '$stateParams', 'DegradeService', 'ngDia
         confirmBtnText: '保存'
       };
       degradeRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/degrade-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/degrade-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -74,7 +74,7 @@ app.controller('DegradeCtl', ['$scope', '$stateParams', 'DegradeService', 'ngDia
         confirmBtnText: '新增'
       };
       degradeRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/degrade-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/degrade-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -117,7 +117,7 @@ app.controller('DegradeCtl', ['$scope', '$stateParams', 'DegradeService', 'ngDia
         confirmBtnText: '删除',
       };
       confirmDialog = ngDialog.open({
-        template: '/app/views/dialog/confirm-dialog.html',
+        template: '/sentinel/app/views/dialog/confirm-dialog.html',
         scope: $scope,
         overlay: true
       });

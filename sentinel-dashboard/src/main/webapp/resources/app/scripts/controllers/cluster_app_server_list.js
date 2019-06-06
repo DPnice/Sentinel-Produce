@@ -252,7 +252,7 @@ app.controller('SentinelClusterAppServerListController', ['$scope', '$stateParam
                 }
             };
             $scope.serverAssignDialog = ngDialog.open({
-                template: '/app/views/dialog/cluster/cluster-server-assign-dialog.html',
+                template: '/sentinel/app/views/dialog/cluster/cluster-server-assign-dialog.html',
                 width: 1000,
                 overlay: true,
                 scope: $scope
@@ -293,7 +293,7 @@ app.controller('SentinelClusterAppServerListController', ['$scope', '$stateParam
                         $scope.serverAssignDialogData.serverData.maxAllowedQps = d.maxAllowedQps;
                     }
                     $scope.serverAssignDialog = ngDialog.open({
-                        template: '/app/views/dialog/cluster/cluster-server-assign-dialog.html',
+                        template: '/sentinel/app/views/dialog/cluster/cluster-server-assign-dialog.html',
                         width: 1000,
                         overlay: true,
                         scope: $scope
@@ -528,7 +528,7 @@ app.controller('SentinelClusterAppServerListController', ['$scope', '$stateParam
                 confirmBtnText: '移除',
             };
             confirmUnbindServerDialog = ngDialog.open({
-                template: '/app/views/dialog/confirm-dialog.html',
+                template: '/sentinel/app/views/dialog/confirm-dialog.html',
                 scope: $scope,
                 overlay: true
             });

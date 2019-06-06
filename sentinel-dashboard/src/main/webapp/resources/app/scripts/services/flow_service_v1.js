@@ -8,7 +8,7 @@ app.service('FlowServiceV1', ['$http', function ($http) {
             port: port
         };
         return $http({
-            url: '/v1/flow/rules',
+            url: '/sentinel/v1/flow/rules',
             params: param,
             method: 'GET'
         });
@@ -31,7 +31,7 @@ app.service('FlowServiceV1', ['$http', function ($http) {
         };
 
         return $http({
-            url: '/v1/flow/rule',
+            url: '/sentinel/v1/flow/rule',
             data: rule,
             method: 'POST'
         });
@@ -52,7 +52,7 @@ app.service('FlowServiceV1', ['$http', function ($http) {
         };
 
         return $http({
-            url: '/v1/flow/save.json',
+            url: '/sentinel/v1/flow/save.json',
             params: param,
             method: 'PUT'
         });
@@ -65,7 +65,7 @@ app.service('FlowServiceV1', ['$http', function ($http) {
         };
 
         return $http({
-            url: '/v1/flow/delete.json',
+            url: '/sentinel/v1/flow/delete.json',
             params: param,
             method: 'DELETE'
         });

@@ -106,7 +106,8 @@ public class HttpHeartbeatSender implements HeartbeatSender {
         }
         URIBuilder uriBuilder = new URIBuilder();
         uriBuilder.setScheme("http").setHost(consoleHost).setPort(consolePort)
-            .setPath("/registry/machine")
+                //添加 /sentinel 路径
+            .setPath("/sentinel/registry/machine")
             .setParameter("app", AppNameUtil.getAppName())
             .setParameter("v", Constants.SENTINEL_VERSION)
             .setParameter("version", String.valueOf(System.currentTimeMillis()))

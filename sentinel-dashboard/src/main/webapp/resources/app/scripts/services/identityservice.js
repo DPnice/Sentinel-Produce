@@ -9,7 +9,7 @@ app.service('IdentityService', ['$http', function ($http) {
       searchKey: searchKey
     };
     return $http({
-      url: 'resource/machineResource.json',
+      url: '/sentinel/resource/machineResource.json',
       params: param,
       method: 'GET'
     });
@@ -22,7 +22,7 @@ app.service('IdentityService', ['$http', function ($http) {
       searchKey: searchKey
     };
     return $http({
-      url: 'resource/machineResource.json',
+      url: '/sentinel/resource/machineResource.json',
       params: param,
       method: 'GET'
     });

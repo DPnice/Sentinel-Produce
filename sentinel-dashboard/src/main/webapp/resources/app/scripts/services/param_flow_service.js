@@ -11,7 +11,7 @@ angular.module('sentinelDashboardApp').service('ParamFlowService', ['$http', fun
       port: port
     };
     return $http({
-      url: '/paramFlow/rules',
+      url: '/sentinel/paramFlow/rules',
       params: param,
       method: 'GET'
     });
@@ -19,7 +19,7 @@ angular.module('sentinelDashboardApp').service('ParamFlowService', ['$http', fun
 
   this.addNewRule = function(rule) {
     return $http({
-      url: '/paramFlow/rule',
+      url: '/sentinel/paramFlow/rule',
       data: rule,
       method: 'POST'
     });
@@ -27,7 +27,7 @@ angular.module('sentinelDashboardApp').service('ParamFlowService', ['$http', fun
 
   this.saveRule = function (entity) {
     return $http({
-      url: '/paramFlow/rule/' + entity.id,
+      url: '/sentinel/paramFlow/rule/' + entity.id,
       data: entity,
       method: 'PUT'
     });
@@ -35,7 +35,7 @@ angular.module('sentinelDashboardApp').service('ParamFlowService', ['$http', fun
 
   this.deleteRule = function (entity) {
     return $http({
-      url: '/paramFlow/rule/' + entity.id,
+      url: '/sentinel/paramFlow/rule/' + entity.id,
       method: 'DELETE'
     });
   };

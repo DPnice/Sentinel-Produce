@@ -81,7 +81,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
       };
 
       flowRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/flow-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/flow-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: flowRuleDialogScope
@@ -95,7 +95,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
       FlowService.newRule(flowRuleDialogScope.currentRule).success(function (data) {
         if (data.code === 0) {
           flowRuleDialog.close();
-          let url = '/dashboard/flow/' + $scope.app;
+          let url = '/sentinel/dashboard/flow/' + $scope.app;
           $location.path(url);
         } else {
           alert('失败!');
@@ -147,7 +147,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
       degradeRuleDialogScope.saveRuleAndContinue = saveDegradeRuleAndContinue;
 
       degradeRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/degrade-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/degrade-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: degradeRuleDialogScope
@@ -161,7 +161,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
       DegradeService.newRule(degradeRuleDialogScope.currentRule).success(function (data) {
         if (data.code == 0) {
           degradeRuleDialog.close();
-          var url = '/dashboard/degrade/' + $scope.app;
+          var url = '/sentinel/dashboard/degrade/' + $scope.app;
           $location.path(url);
         } else {
           alert('失败!');
@@ -193,7 +193,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
           AuthorityRuleService.addNewRule(ruleEntity).success((data) => {
               if (data.success) {
                   authorityRuleDialog.close();
-                  let url = '/dashboard/authority/' + $scope.app;
+                  let url = '/sentinel/dashboard/authority/' + $scope.app;
                   $location.path(url);
               } else {
                   alert('添加规则失败：' + data.msg);
@@ -254,7 +254,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
           authorityRuleDialogScope.saveRuleAndContinue = saveAuthorityRuleAndContinue;
 
           authorityRuleDialog = ngDialog.open({
-              template: '/app/views/dialog/authority-rule-dialog.html',
+              template: '/sentinel/app/views/dialog/authority-rule-dialog.html',
               width: 680,
               overlay: true,
               scope: authorityRuleDialogScope
@@ -272,7 +272,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
           ParamFlowService.addNewRule(ruleEntity).success((data) => {
               if (data.success) {
                   paramFlowRuleDialog.close();
-                  let url = '/dashboard/paramFlow/' + $scope.app;
+                  let url = '/sentinel/dashboard/paramFlow/' + $scope.app;
                   $location.path(url);
               } else {
                   alert('添加热点规则失败：' + data.msg);
@@ -343,7 +343,7 @@ app.controller('IdentityCtl', ['$scope', '$stateParams', 'IdentityService',
           // };
 
           paramFlowRuleDialog = ngDialog.open({
-              template: '/app/views/dialog/param-flow-rule-dialog.html',
+              template: '/sentinel/app/views/dialog/param-flow-rule-dialog.html',
               width: 680,
               overlay: true,
               scope: paramFlowRuleDialogScope

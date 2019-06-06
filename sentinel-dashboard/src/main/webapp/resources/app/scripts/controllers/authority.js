@@ -62,7 +62,7 @@ angular.module('sentinelDashboardApp').controller('AuthorityRuleController', ['$
                 confirmBtnText: '保存',
             };
             authorityRuleDialog = ngDialog.open({
-                template: '/app/views/dialog/authority-rule-dialog.html',
+                template: '/sentinel/app/views/dialog/authority-rule-dialog.html',
                 width: 680,
                 overlay: true,
                 scope: $scope
@@ -87,7 +87,7 @@ angular.module('sentinelDashboardApp').controller('AuthorityRuleController', ['$
                 showAdvanceButton: true,
             };
             authorityRuleDialog = ngDialog.open({
-                template: '/app/views/dialog/authority-rule-dialog.html',
+                template: '/sentinel/app/views/dialog/authority-rule-dialog.html',
                 width: 680,
                 overlay: true,
                 scope: $scope
@@ -177,7 +177,7 @@ angular.module('sentinelDashboardApp').controller('AuthorityRuleController', ['$
                 confirmBtnText: '删除',
             };
             confirmDialog = ngDialog.open({
-                template: '/app/views/dialog/confirm-dialog.html',
+                template: '/sentinel/app/views/dialog/confirm-dialog.html',
                 scope: $scope,
                 overlay: true
             });

@@ -26,7 +26,7 @@ app.controller('SentinelClusterAppTokenClientListController', ['$scope', '$state
                 requestTimeout: clientVO.state.clientConfig.requestTimeout,
             };
             $scope.ccDialog = ngDialog.open({
-                template: '/app/views/dialog/cluster/cluster-client-config-dialog.html',
+                template: '/sentinel/app/views/dialog/cluster/cluster-client-config-dialog.html',
                 width: 700,
                 overlay: true,
                 scope: $scope

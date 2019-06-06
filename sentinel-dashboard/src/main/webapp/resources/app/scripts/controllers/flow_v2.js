@@ -69,7 +69,7 @@ app.controller('FlowControllerV2', ['$scope', '$stateParams', 'FlowServiceV2', '
         showAdvanceButton: rule.controlBehavior == 0 && rule.strategy == 0
       };
       flowRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/flow-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/flow-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -99,7 +99,7 @@ app.controller('FlowControllerV2', ['$scope', '$stateParams', 'FlowServiceV2', '
         showAdvanceButton: true,
       };
       flowRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/flow-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/flow-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -129,7 +129,7 @@ app.controller('FlowControllerV2', ['$scope', '$stateParams', 'FlowServiceV2', '
         confirmBtnText: '删除',
       };
       confirmDialog = ngDialog.open({
-        template: '/app/views/dialog/confirm-dialog.html',
+        template: '/sentinel/app/views/dialog/confirm-dialog.html',
         scope: $scope,
         overlay: true
       });

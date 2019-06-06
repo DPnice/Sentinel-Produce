@@ -138,7 +138,7 @@ angular.module('sentinelDashboardApp').controller('ParamFlowController', ['$scop
         showAdvanceButton: rule.rule.paramFlowItemList === undefined || rule.rule.paramFlowItemList.length <= 0
       };
       paramFlowRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/param-flow-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/param-flow-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -170,7 +170,7 @@ angular.module('sentinelDashboardApp').controller('ParamFlowController', ['$scop
         showAdvanceButton: true,
       };
       paramFlowRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/param-flow-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/param-flow-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -269,7 +269,7 @@ angular.module('sentinelDashboardApp').controller('ParamFlowController', ['$scop
         confirmBtnText: '删除',
       };
       confirmDialog = ngDialog.open({
-        template: '/app/views/dialog/confirm-dialog.html',
+        template: '/sentinel/app/views/dialog/confirm-dialog.html',
         scope: $scope,
         overlay: true
       });

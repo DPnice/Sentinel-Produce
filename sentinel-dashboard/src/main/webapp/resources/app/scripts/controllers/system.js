@@ -65,7 +65,7 @@ app.controller('SystemCtl', ['$scope', '$stateParams', 'SystemService', 'ngDialo
         confirmBtnText: '保存'
       };
       systemRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/system-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/system-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -86,7 +86,7 @@ app.controller('SystemCtl', ['$scope', '$stateParams', 'SystemService', 'ngDialo
         confirmBtnText: '新增'
       };
       systemRuleDialog = ngDialog.open({
-        template: '/app/views/dialog/system-rule-dialog.html',
+        template: '/sentinel/app/views/dialog/system-rule-dialog.html',
         width: 680,
         overlay: true,
         scope: $scope
@@ -129,7 +129,7 @@ app.controller('SystemCtl', ['$scope', '$stateParams', 'SystemService', 'ngDialo
         confirmBtnText: '删除',
       };
       confirmDialog = ngDialog.open({
-        template: '/app/views/dialog/confirm-dialog.html',
+        template: '/sentinel/app/views/dialog/confirm-dialog.html',
         scope: $scope,
         overlay: true
       });
